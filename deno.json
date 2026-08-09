@@ -1,0 +1,6 @@
+{
+  "allowScripts": ["npm:@astryxdesign/cli@0.3.0", "npm:@astryxdesign/core@0.3.0"],
+  "tasks": {
+    "dev": "NODE_OPTIONS=--conditions=development react-router dev"
+  }
+}
