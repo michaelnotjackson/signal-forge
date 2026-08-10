@@ -1,6 +1,22 @@
 {
-  "allowScripts": ["npm:@astryxdesign/cli@0.3.0", "npm:@astryxdesign/core@0.3.0"],
+  "allowScripts": [
+    "npm:@astryxdesign/cli@0.3.0",
+    "npm:@astryxdesign/core@0.3.0"
+  ],
   "tasks": {
     "dev": "NODE_OPTIONS=--conditions=development react-router dev"
+  },
+  "compilerOptions": {
+    "lib": [
+      "deno.desktop",
+      "deno.unstable",
+      "deno.ns"
+    ]
+  },
+  "desktop": {
+    "app": {
+      "name": "Signal Forge"
+    },
+    "backend": "webview"
   }
 }

@@ -25,13 +25,14 @@
   "devDependencies": {
     "@astryxdesign/build": "^0.3.0",
     "@stylexjs/unplugin": "^0.19.0",
+    "@types/deno": "^2.7.0",
     "@types/node": "^22",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@react-router/dev": "~8.2.0",
     "husky": "^9.1.7",
     "oxlint": "^1.77.0",
-    "typescript": "^5.9.3",
+    "typescript": "^7.0.2",
     "vite": "^8.0.3"
   }
 }

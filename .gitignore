@@ -6,3 +6,5 @@
 /.react-router/
 /build/
 
+.vscode/
+!.vscode/extensions.json
