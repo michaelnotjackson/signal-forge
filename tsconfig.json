@@ -2,11 +2,10 @@
   "include": [
     "**/.server/**/*",
     "**/.client/**/*",
-    ".react-router/types/**/*"
+    ".react-router/types/**/*",
+    "shared/**/*.d.ts"
   ],
-  "exclude": [
-    "server.ts"
-  ],
+  "exclude": [],
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "ES2022"],
     "types": ["node", "vite/client"],

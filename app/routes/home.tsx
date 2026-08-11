@@ -10,7 +10,7 @@ export function meta() {
 export default function Home() {
   return (
     <VStack>
-      <Button label="Le Button"/>
+      <Button label="Le Button" onClick={async () => await bindings.ping()}/>
     </VStack>
   );
 }

@@ -6,17 +6,30 @@
   "tasks": {
     "dev": "NODE_OPTIONS=--conditions=development react-router dev"
   },
+  "exclude": [".react-router/", "react-router.config.ts", "vite.config.ts", "build/"],
+  "lint": {
+    "exclude": ["app/"]
+  },
+  "fmt": {
+    "exclude": ["app/"]
+  },
   "compilerOptions": {
     "lib": [
       "deno.desktop",
       "deno.unstable",
       "deno.ns"
-    ]
+    ],
+    "jsx": "react-jsx"
   },
   "desktop": {
     "app": {
       "name": "Signal Forge"
     },
-    "backend": "webview"
+    "backend": "webview",
+    "output": {
+      "linux": "./dist/linux/",
+      "windows": "./dist/win/",
+      "macos": "./dist/macos/"
+    }
   }
 }
