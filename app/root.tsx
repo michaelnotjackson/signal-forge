@@ -6,6 +6,8 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
+import { Theme } from "@astryxdesign/core";
+import { neutralTheme } from "@astryxdesign/theme-neutral";
 
 import { StrictMode } from "react";
 
@@ -46,7 +48,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
 export default function App() {
   return (
     <StrictMode>
-      <Outlet />
+      <Theme theme={neutralTheme} mode="light">
+        <Outlet />
+      </Theme>
     </StrictMode>
   );
 }
